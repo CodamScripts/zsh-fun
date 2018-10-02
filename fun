@@ -1,3 +1,2 @@
-cmd="display alert \"Parrot took over your PC\""
-osascript -e $cmd
+osascript -e "display alert \"Parrot took over your PC\""
 curl parrot.live
