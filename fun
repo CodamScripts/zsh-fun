@@ -1,5 +1,5 @@
 
-if [ "$(whoami)" = "dvan-der" ]; then
+if [ "$(whoami)" = "jidzinga" ]; then
 	CD_FULL_NAME=$(finger $(whoami) | perl -ne '/Name: ([a-zA-Z0-9 ]{1,})/ && print "$1\n"')
 
 	CD_TMP_DIR=$(mktemp -d)
